@@ -60,10 +60,7 @@ class NewsletterGenerator:
         self.model_configs = {            
             'microsoft': ("microsoft/Phi-3-mini-128k-instruct", "microsoft/Phi-3-mini-128k-instruct"),
             'mistral': ("mistralai/Mistral-7B-Instruct-v0.2", "mistralai/Mistral-7B-Instruct-v0.2"),
-            'meta-llama': ("meta-llama/Meta-Llama-3-8B-Instruct", "meta-llama/Meta-Llama-3-8B-Instruct"),
-            'snowflake': ("Snowflake/snowflake-arctic-instruct", "Snowflake/snowflake-arctic-instruct"),
-            'tenyxchat': ("tenyx/Llama3-TenyxChat-70B", "tenyx/Llama3-TenyxChat-70B"),
-            'dolphin': ("cognitivecomputations/dolphin-2.9-llama3-8b", "cognitivecomputations/dolphin-2.9-llama3-8b")
+            'snowflake': ("Snowflake/snowflake-arctic-instruct", "Snowflake/snowflake-arctic-instruct")
         }
         model, tokenizer = self.model_configs.get(model_name, self.model_configs['microsoft'])
         self.model = model
